@@ -127,7 +127,7 @@ public class arena_reservation extends AppCompatActivity{
                 else {
                     db.createBooking(reservedarena);
                     db.close();
-
+                    Toast.makeText(arena_reservation.this, "Court order success!", Toast.LENGTH_SHORT).show();
                     Intent i = new Intent(arena_reservation.this, sportmenu.class);
                     i.putExtra("userID", userID);
                     startActivity(i);
